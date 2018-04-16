@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+        height: 50px;
+        line-height: 30px;
+        background: #C4493C;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px 80px 10px 80px;
+        label {
+            input {
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                border-radius: 20px;
+                text-align: center;
+                outline: 0;
+                border: 0;
+                border: 1px solid #ccc;
+            }
+        }
+        span {
+            width: 80px;
+            height: 50px;
+            display: inline-block;
+            text-align: center;
+            .icon {
+                color: #fff;
+                font-size: 30px;
+                z-index: 10;
+            }
+            &:nth-of-type(1) {
+                position: absolute;
+                left: 0;
+            }
+            &:nth-of-type(2) {
+                position: absolute;
+                right: 0;
+                top: 8px
+            }
+        }
+    }
+    .nav {
+        width: 100%;
+        height: 50px;
+        ul {
+            li {
+                width: 33.3%;
+                height: 50px;
+                line-height: 48px;
+                float: left;
+                text-align: center;
+                color: #323233;
+                font-size: 18px;
+            }
+            .active {
+                color: #C3473A;
+                border-bottom: 2px solid #C3473A;
+            }
+        }
+    }
+    section {
+        flex: 1;
+        margin-top: 2px;
+        .mian {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 200px;
+            }
+            .page {
+                position: absolute;
+                z-index: 99;
+                bottom: 10px
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>
+                <i class="icon iconfont icon-erji"></i>
+            </span>
+            <label for="">
+                <input type="text" placeholder="给你推荐">
+            </label>
+            <span>
+                <i class="icon iconfont icon-tijiaodingdan"></i>
+            </span>
+        </header>
+        <div class="nav">
+            <ul>
+                <li class="active">音乐</li>
+                <li>视频</li>
+                <li>电台</li>
+            </ul>
+        </div>
+        <section class="swiper-conation">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- 自动轮播 -->
+                    <div class="mian swiper-conation">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="image/1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/1.png" alt="">
+                            </div>
+                        </div>
+                        <!-- 分页 -->
+                        <div class="page swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background:skyblue;width:100%;height:100%;">
+                    视频
+                </div>
+                <div class="swiper-slide" style="background:hotpink;width:100%;height:100%;">
+                    3
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src='js/jquery-2.1.1.min.js'></script>
+    <script>
+        new Swiper('section');
+        new Swiper('.mian', {
+            loop: true,
+            autoplay: 300,
+            pagination: '.page'
+        });
+    </script>
+</body>
+
+</html>
